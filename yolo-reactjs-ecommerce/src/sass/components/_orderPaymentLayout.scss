@@ -1,0 +1,9 @@
+.order-payment-layout {
+   display: flex;
+   &_order {
+    flex:7;
+   }
+   &_payment {
+    flex:3;
+   }
+}

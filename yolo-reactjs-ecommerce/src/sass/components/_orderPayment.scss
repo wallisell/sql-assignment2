@@ -1,0 +1,43 @@
+.order-payment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  // position: fixed;
+}
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  position: relative;
+  align-items: center;
+}
+.total-price::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 0.2px dotted #ccc;
+  top: 0;
+  left: 0;
+  transform: translateY(-10px);
+}
+.total-price::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 0.2px dotted #ccc;
+  bottom: 0;
+  left: 0;
+  transform: translateY(10px);
+}
+.pay-btn {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  .link {
+    width: auto;
+    flex:1;
+  }
+}
+.return-home {
+  margin-top: 12px;
+}
